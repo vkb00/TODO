@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(countList);
         listTasks = localStorageData;
         for(let i=0;i<listTasks.length;i++){
-            printListFromLS(localStorageData[i]);
+            addListItemFromLS(localStorageData[i]);
         }
         
     }
-    function printListFromLS(listItemObject){
+    function addListItemFromLS(listItemObject){
         let listItem = document.createElement('div');
         listItem.className = "listItem";
         listItem.id = listItemObject.id;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         listItem.appendChild(deleteListItem);
         document.querySelector("div[id=listContainer]").append(listItem);
     }
-    function addListItem(checkboxValue, listName) {
+    function addListItem() {
 
         let listItem = document.createElement('div');
         listItem.className = "listItem";
@@ -57,21 +57,10 @@ document.addEventListener('DOMContentLoaded', function () {
         listItem.appendChild(p);
         listItem.appendChild(deleteListItem);
         document.querySelector("div[id=listContainer]").append(listItem);
-        // let deleteListItemValue = document.querySelectorAll('.deleteListItem');
-        // for (let i = 0; i < deleteListItemValue.length; i++) {
-        //     deleteListItemValue[i].onclick = function () {
-
-        //         let removeList = deleteListItemValue[i].parentNode;
-        //         let temp = removeList.parentNode;
-
-        //         temp.removeChild(removeList);
-        //         listTasks.splice(i,1);
-        //         console.log(listTasks);
-        //     };
-        // }
-        let checkboxElement = document.querySelectorAll('.checkbox');
-        for (let i = 0; i < checkboxElement.length; i++) {
-            checkboxElement[i].onclick = function () {
+        
+        let checkboxElements = document.querySelectorAll('.checkbox');
+        for (let i = 0; i < checkboxElements.length; i++) {
+            checkboxElements[i].onclick = function () {
 
                 console.log(checkbox.checked);
 

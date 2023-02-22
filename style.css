@@ -27,7 +27,7 @@ body {
     padding: 0;
 }
 
-.listContainer {
+#listContainer {
     width: 500px;
     padding: 20px;
     margin: auto;
@@ -57,7 +57,7 @@ body {
 
 }
 
-.deleteListItem {
+#deleteListItem {
     margin: 10px;
     width: 100px;
     height: 50px;

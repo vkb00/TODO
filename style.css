@@ -5,7 +5,7 @@ body {
 
 .inputContainer {
     width: 500px;
-    background-color: red;
+    background-color: #E5D200;
     padding: 20px;
     margin: auto;
     display: flex;
@@ -17,14 +17,15 @@ body {
     width: 350px;
     height: 50px;
     box-sizing: border-box;
-    font-size: 30px
+    font-size: 30px;
 }
 
 #inputButton {
-    width: 50px;
+    width: 130px;
     height: 50px;
     box-sizing: border-box;
     padding: 0;
+    font-size: 20px;
 }
 
 #listContainer {
@@ -33,13 +34,14 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: #504BC5;
 }
 
 .listItem {
     width: 500px;
     height: 100px;
-    background-color: green;
+    margin: 10px 0px;
+    background-color: #FFA01A;
     display: flex;
     align-items: center;
 
@@ -61,4 +63,16 @@ body {
     margin: 10px;
     width: 100px;
     height: 50px;
+    font-size: 20px;
+}
+.taskName{
+    font-size: 30px;
+    margin: auto;
+    width: 200px;
+}
+.ListName{
+    font-size: 30px;   
+    width: 200px; 
+    margin: 0;
+    color: white;
 }

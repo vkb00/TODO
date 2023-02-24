@@ -33,12 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
         let deleteListItem = document.createElement('input');
         deleteListItem.id = "deleteListItem";
         deleteListItem.type = "button";
+        deleteListItem.value = "Удалить";
 
 
         listItem.appendChild(checkbox);
         listItem.appendChild(p);
         listItem.appendChild(deleteListItem);
         document.querySelector("div[id=listContainer]").append(listItem);
+        document.getElementById("inputString").focus();
     }
     function initObjectListItem() {
         const listItem = {
